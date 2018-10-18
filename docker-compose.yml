@@ -1,0 +1,5 @@
+front:
+  build: .
+  ports:
+    - "80:80"
+
