@@ -1,0 +1,13 @@
+RewriteEngine on 
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?qs=$1 [QSA,l]
+
+#Order deny,allow
+#Deny from all
+#Allow from 103.255.100.2
+
+
