@@ -51,5 +51,16 @@ $MONGO["servers"][$i]["mongo_port"] = "27017";
 $MONGO["servers"][$i]["control_users"]["admin"] = "password";
 $i ++;
 **/
+$MONGO["servers"][$i]["mongo_name"] = "jd-company";//mongo server name
+//$MONGO["servers"][$i]["mongo_sock"] = "/var/run/mongo.sock";//mongo socket path (instead of host and port)
+$MONGO["servers"][$i]["mongo_host"] = "103.255.101.226";//mongo host
+$MONGO["servers"][$i]["mongo_port"] = "28421";//mongo port
+$MONGO["servers"][$i]["control_users"]["admin"] = "kldg98sdfk*&sh(*-sdkf";
+$MONGO["servers"][$i]["control_auth"] = false;
+$MONGO["servers"][$i]["mongo_timeout"] = 0;//mongo connection timeout
+$MONGO["servers"][$i]["mongo_db"] = "admin";//default mongo db to connect, works only if mongo_auth=false
+$MONGO["servers"][$i]["mongo_user"] = "jdiirvDBM";//mongo authentication user name, works only if mongo_auth=false
+$MONGO["servers"][$i]["mongo_pass"] = "dkshdk288LLdsjhYkk";//mongo authentication password, works only if mongo_auth=false
+$i ++;
 
 ?>
