@@ -11,7 +11,7 @@ FROM nginx
 # Remove default nginx configs.
 # Install packages
 RUN rm -f /etc/nginx/conf.d/* \
-  && mkdir -p /run/php /run/hhvm \
+  && mkdir -p /run/php  \
   && apt-get update && apt-get upgrade -y && apt-get install -my \
     supervisor \
     curl \
@@ -30,9 +30,7 @@ RUN apt-get -y install php-pear
 RUN apt-get -y install php7.0-dev
 RUN pecl install mongodb
 
-# Install HHVM
-RUN echo "deb http://deb.debian.org/debian sid main" >> /etc/apt/sources.list \
-    && apt-get update && apt-get install -y hhvm
+
 
 # Ensure that PHP5 FPM is run as root.
 # Pass all docker environment
