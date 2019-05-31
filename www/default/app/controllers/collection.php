@@ -425,7 +425,7 @@ class CollectionController extends BaseController {
 	/**
 	 * Clear query history
 	 */
-	public function doClearQueryHistory() {
+	public function nnnnnnnQueryHistory() {
 		if ($this->_logQuery) {
 			$logFile = $this->_logFile(xn("db"), xn("collection"));
 			if (is_file($logFile)) {
@@ -707,6 +707,9 @@ class CollectionController extends BaseController {
 
 	/** clear rows in collection **/
 	public function doClearRows() {
+		echo "This function is disabled";
+		die();
+	/*	
 		$this->db = x("db");
 		$this->collection = xn("collection");
 
@@ -722,6 +725,7 @@ window.parent.frames["left"].location.reload();
 			"db" => $this->db,
 			"collection" => $this->collection
 		), true);
+	*/
 	}
 
 	/** drop collection **/
