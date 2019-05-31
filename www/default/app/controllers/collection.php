@@ -726,11 +726,15 @@ window.parent.frames["left"].location.reload();
 
 	/** drop collection **/
 	public function doRemoveCollection() {
-		$this->db = x("db");
+		echo "This function is disabled";
+		die();
+	
+	/*	$this->db = x("db");
 		$this->collection = xn("collection");
 		$db = $this->_mongo->selectDB($this->db);
 		$db->dropCollection($this->collection);
 		$this->display();
+	*/
 	}
 
 	/** list collection indexes **/
